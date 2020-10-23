@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<title>toufik website project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/t1images/pizza.jpg");
+  min-height: 90%;
+}
+</style>
+<body>
+​
+<!-- Navbar (sit on top) -->
+<div class="t1-top t1-hide-small">
+  <div class="t1-bar t1-xlarge t1-black t1-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item t1-button">HOME</a>
+    <a href="#menu" class="t1-bar-item t1-button">MENU</a>
+    <a href="#about" class="t1-bar-item t1-button">ABOUT</a>
+    <a href="#myMap" class="t1-bar-item t1-button">CONTACT</a>
+    
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg t1-display-container t1-grayscale-min" id="home">
+  <div class="t1-display-bottomleft t1-padding">
+    <span class="t1-tag w3-xlarge">Open from 11am to 1am we serve drink all day in our downstairs bar</span>
+  </div>
+  <div class="w3-display-middle t1-center">
+    <span class="t1-text-white t1-hide-small" style="font-size:80px">TOUFIK SOHO<br>pizza land</span>
+    <span class="t1-text-white t1-hide-large t1-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
+    <p><a href="#menu" class="t1-button t1-xxlarge t1-black">Let me see the menu of toufik soho</a></p>
+  </div>
+  <div class="container">
+      
+      <img src="Unknown1.jpg">
+      <img src="images-1.jpeg">
+      <img src ="Unknown3.jpg">
+  </div>
+</header>
+​
+<!-- Menu Container -->
+<div class="t1-container t1-black t1-padding-64 t1-xxlarge" id="menu">
+  <div class="t1-content">
+  
+    <h1 class="t1-center t1-jumbo" style="margin-bottom:64px">OUR FANTASTIC MENU</h1>
+    <div class="t1-row t1-center w3-border t1-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="t1-col s4 tablink t1-padding-large t1-hover-red">Pizza hoho</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="t1-col s4 tablink w3-padding-large t1-hover-red">Salads hoho</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="t1-col s4 tablink t1-padding-large t1-hover-red">Starter hoho</div>
+      </a>
+    </div>
+​
+    <div id="Pizza" class="t1-container menu t1-padding-32 wt1white">
+      <h1><b>Margherita lala</b> <span class="t1-right w3-tag t1-dark-grey t1-round">£6.50</span></h1>
+      <p class="t1-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr>
+   
+      <h1><b>Formaggio lala</b> <span class="t1-right t1-tag t1-dark-grey t1-round">£9.50</span></h1>
+      <p class="t1-text-grey">Four cheeses (mozzarella, parmesan, gorgonzola , feta,picorini)</p>
+      <hr>
+      
+      <h1><b>code nation lala</b> <span class="t1-right t1-tag t1-dark-grey t1-round">£11.00</span></h1>
+      <p class="t1-text-grey">Fresh tomatoes, mozzarella, salami, olive</p>
+      <hr>
+​
+      <h1><b>toufik lala</b> <span class="t1-right w3-tag t1-dark-grey t1-round">£12.50</span></h1>
+      <p class="t1-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+      <hr>
+​
+      <h1><b>Meat Town</b> <span class="t1-tag w3-red t1-round">Hot!</span><span class="t1-right t1-tag w3-dark-grey t1-round">£15.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot salami , beef, olives</p>
+      <hr>
+​
+      <h1><b>Parma</b> <span class="t1-tag t1-grey t1-round">New</span><span class="t1-right t1-tag w3-dark-grey t1-round">£16.50</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, anchovies, fresh rocket</p>
+    </div>
+​
+    <div id="Pasta" class="t1-container menu t1-padding-32 t1-white">
+      <h1><b>Lasagna</b> <span class="t1-tag w3-grey t1-round">Popular</span> <span class="t1-right t1-tag t1-dark-grey t1-round">£16.50</span></h1>
+      <p class="t1-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+      <hr>
+   
+      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">£11.50</span></h1>
+      <p class="w3-text-grey">Ravioli filled with cheese and spinach</p>
+      <hr>
+      
+      <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">£15.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, onions, ground salami ,parmigiano</p>
+      <hr>
+​
+      <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">@19.50</span></h1>
+      <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+    </div>
+​
+​
+    <div id="Starter" class="w3-container menu w3-padding-32 t1-white">
+      <h1><b>Today's Soup soupa del girno </b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">£4.50</span></h1>
+      <p class="w3-text-grey">Ask our waiter</p>
+      <hr>
+   
+      <h1><b>Bruschetta la fresca</b> <span class="w3-right w3-tag w3-dark-grey w3-round">£2.50</span></h1>
+      <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+      <hr>
+      
+      <h1><b>panne al garlico</b> <span class="w3-right w3-tag w3-dark-grey w3-round">£3.50</span></h1>
+      <p class="t1-text-grey">Grilled ciabatta, garlic butter, onions</p>
+      <hr>
+      
+      <h1><b>insalata tricolore </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Tomatoes and mozzarella</p>
+    </div><br>
+​
+  </div>
+</div>
+​
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About us</h1>
+    <p>The toufik soho pizza was founded by his majesty prince of algeria toufik agha his first restaurant was in la rue de la paix centre of paris prince toufik studied cooking in the courdon bleu in central london marylebone and he has over 10 restaurant worldwide and his has 3 michlin stars.</p><br>
+    <p><strong>The Chef?</strong> Mr.amico napoli <br>
+        <img src="images (2).jpeg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our cooking and our atmosphere .</p>
+    <img class="resize" src="Unknown-3.jpeg">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue 11:00 am- 02:00am</p>
+        <p>Wednesday 11.00 am- 01:00am</p>
+        <p>Thursday 11.00 am- 01:00am</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 11:00 am- 01:00am</p>
+        <p>Saturday 11:00 am- 01:00am</p>
+        <p>Sunday 12:00pm - 23:00pm</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+​
+<!-- Image of location/map -->
+<img src="Unknown-4.jpeg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+​
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact us any time on</h1>
+    <p>Find us at TOUFIK SOHO PIZZA 23 PICCADILY CIRCUS LONDON WEST END SW123ER /// or call us at 020 7345 8675</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+​
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+</footer>
+​
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+​
+</body>
+</html>
+
+
+
+
+
+

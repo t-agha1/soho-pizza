@@ -1,0 +1,12 @@
+* {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.resize {
+    width: 1%;
+}
